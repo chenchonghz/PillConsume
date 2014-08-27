@@ -12,13 +12,13 @@
 
 @property  NSString *name;
 
-@property  NSUInteger totolCount;
+@property  NSInteger totolCount;
 
-@property  NSUInteger perBoxCardCount;
+@property  NSInteger perBoxCardCount;
 
-@property  NSUInteger perCardPillCount;
+@property  NSInteger perCardPillCount;
 
-@property  NSUInteger perDayDrinkCount;
+@property  NSInteger perDayDrinkCount;
 
 
 @end

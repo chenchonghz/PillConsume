@@ -44,6 +44,9 @@
 		2169935119912752004FB521 /* SchemesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2169935019912752004FB521 /* SchemesViewController.xib */; };
 		4857186D19AD81AD00D14C19 /* PillDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4857186C19AD81AD00D14C19 /* PillDataManager.m */; };
 		4864050019ADDE99000A08EC /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 486404FF19ADDE99000A08EC /* DKCircleButton.m */; };
+		48CD025019AE1EEA00B9DD1D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48CD024F19AE1EEA00B9DD1D /* README.md */; };
+		48CD025519AE251A00B9DD1D /* PillMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CD025319AE251A00B9DD1D /* PillMainTableViewCell.m */; };
+		48CD025619AE251A00B9DD1D /* PillMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CD025419AE251A00B9DD1D /* PillMainTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +119,10 @@
 		4857186C19AD81AD00D14C19 /* PillDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillDataManager.m; sourceTree = "<group>"; };
 		486404FE19ADDE99000A08EC /* DKCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCircleButton.h; sourceTree = "<group>"; };
 		486404FF19ADDE99000A08EC /* DKCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCircleButton.m; sourceTree = "<group>"; };
+		48CD024F19AE1EEA00B9DD1D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		48CD025219AE251A00B9DD1D /* PillMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillMainTableViewCell.h; sourceTree = "<group>"; };
+		48CD025319AE251A00B9DD1D /* PillMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillMainTableViewCell.m; sourceTree = "<group>"; };
+		48CD025419AE251A00B9DD1D /* PillMainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PillMainTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				216992C519911502004FB521 /* PillConsume */,
+				48CD024F19AE1EEA00B9DD1D /* README.md */,
 				216992DE19911502004FB521 /* PillConsumeTests */,
 				216992BE19911502004FB521 /* Frameworks */,
 				216992BD19911502004FB521 /* Products */,
@@ -175,6 +183,7 @@
 		216992C519911502004FB521 /* PillConsume */ = {
 			isa = PBXGroup;
 			children = (
+				48CD025119AE24E400B9DD1D /* cell */,
 				2169933E19911EF7004FB521 /*  model */,
 				216992F019911563004FB521 /* AddPillViewController.h */,
 				216992F119911563004FB521 /* AddPillViewController.m */,
@@ -295,6 +304,16 @@
 			path = DKCircleButton;
 			sourceTree = "<group>";
 		};
+		48CD025119AE24E400B9DD1D /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				48CD025219AE251A00B9DD1D /* PillMainTableViewCell.h */,
+				48CD025319AE251A00B9DD1D /* PillMainTableViewCell.m */,
+				48CD025419AE251A00B9DD1D /* PillMainTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,6 +391,8 @@
 			files = (
 				216993061991161B004FB521 /* SettingViewController.xib in Resources */,
 				216992FC1991159E004FB521 /* PillMainViewController.xib in Resources */,
+				48CD025019AE1EEA00B9DD1D /* README.md in Resources */,
+				48CD025619AE251A00B9DD1D /* PillMainTableViewCell.xib in Resources */,
 				216992CA19911502004FB521 /* InfoPlist.strings in Resources */,
 				216992F719911587004FB521 /* PillManagerViewController.xib in Resources */,
 				216992EF1991153F004FB521 /* AddPillViewController.xib in Resources */,
@@ -403,6 +424,7 @@
 				2169932F199118FE004FB521 /* Evaluate.m in Sources */,
 				4857186D19AD81AD00D14C19 /* PillDataManager.m in Sources */,
 				21699333199118FE004FB521 /* RESideMenuItem.m in Sources */,
+				48CD025519AE251A00B9DD1D /* PillMainTableViewCell.m in Sources */,
 				21699331199118FE004FB521 /* RESideMenu.m in Sources */,
 				2169934C1991269A004FB521 /* SchemesViewController.m in Sources */,
 				4864050019ADDE99000A08EC /* DKCircleButton.m in Sources */,

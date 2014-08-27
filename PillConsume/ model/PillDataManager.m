@@ -62,14 +62,8 @@
         NSString *plistPath1 = [paths objectAtIndex:0];
         NSString *filename=[plistPath1 stringByAppendingPathComponent:@"pilllist.plist"];
         
-        NSArray *arry = [NSKeyedUnarchiver unarchiveObjectWithFile: filename];
-        self.pillList = [[NSMutableArray alloc] initWithArray: arry];
-        
-        for (Pill* pi in self.pillList) {
-            if ([pi.name isEqualToString:pill.name]) {
-                [self.pillList removeObject:pi];
-            }
-        }
+        [self.pillList removeObject:pill];
+
         //保存数据
         [NSKeyedArchiver archiveRootObject:self.pillList toFile:filename];
         return YES;
