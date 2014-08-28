@@ -43,6 +43,9 @@
 		2169934D1991269A004FB521 /* UIColor+Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 2169934A1991269A004FB521 /* UIColor+Colours.m */; };
 		2169935119912752004FB521 /* SchemesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2169935019912752004FB521 /* SchemesViewController.xib */; };
 		4857186D19AD81AD00D14C19 /* PillDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4857186C19AD81AD00D14C19 /* PillDataManager.m */; };
+		486351B719AEC81100349DC4 /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 486351B619AEC81100349DC4 /* theme.plist */; };
+		486351BB19AECB6A00349DC4 /* ThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351BA19AECB6A00349DC4 /* ThemeColor.m */; };
+		486351BE19AECC4F00349DC4 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351BD19AECC4F00349DC4 /* ThemeManager.m */; };
 		4864050019ADDE99000A08EC /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 486404FF19ADDE99000A08EC /* DKCircleButton.m */; };
 		48CD025019AE1EEA00B9DD1D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48CD024F19AE1EEA00B9DD1D /* README.md */; };
 		48CD025519AE251A00B9DD1D /* PillMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CD025319AE251A00B9DD1D /* PillMainTableViewCell.m */; };
@@ -117,6 +120,11 @@
 		2169935019912752004FB521 /* SchemesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SchemesViewController.xib; sourceTree = "<group>"; };
 		4857186B19AD81AD00D14C19 /* PillDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillDataManager.h; sourceTree = "<group>"; };
 		4857186C19AD81AD00D14C19 /* PillDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillDataManager.m; sourceTree = "<group>"; };
+		486351B619AEC81100349DC4 /* theme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = theme.plist; sourceTree = "<group>"; };
+		486351B919AECB6A00349DC4 /* ThemeColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeColor.h; sourceTree = "<group>"; };
+		486351BA19AECB6A00349DC4 /* ThemeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeColor.m; sourceTree = "<group>"; };
+		486351BC19AECC4F00349DC4 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
+		486351BD19AECC4F00349DC4 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
 		486404FE19ADDE99000A08EC /* DKCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCircleButton.h; sourceTree = "<group>"; };
 		486404FF19ADDE99000A08EC /* DKCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCircleButton.m; sourceTree = "<group>"; };
 		48CD024F19AE1EEA00B9DD1D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -183,6 +191,7 @@
 		216992C519911502004FB521 /* PillConsume */ = {
 			isa = PBXGroup;
 			children = (
+				486351B819AECB4600349DC4 /* theme */,
 				48CD025119AE24E400B9DD1D /* cell */,
 				2169933E19911EF7004FB521 /*  model */,
 				216992F019911563004FB521 /* AddPillViewController.h */,
@@ -219,6 +228,7 @@
 				216992CB19911502004FB521 /* main.m */,
 				216992CD19911502004FB521 /* PillConsume-Prefix.pch */,
 				2169934219912048004FB521 /* pilllist.plist */,
+				486351B619AEC81100349DC4 /* theme.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -293,6 +303,17 @@
 				2169934A1991269A004FB521 /* UIColor+Colours.m */,
 			);
 			path = color;
+			sourceTree = "<group>";
+		};
+		486351B819AECB4600349DC4 /* theme */ = {
+			isa = PBXGroup;
+			children = (
+				486351B919AECB6A00349DC4 /* ThemeColor.h */,
+				486351BA19AECB6A00349DC4 /* ThemeColor.m */,
+				486351BC19AECC4F00349DC4 /* ThemeManager.h */,
+				486351BD19AECC4F00349DC4 /* ThemeManager.m */,
+			);
+			path = theme;
 			sourceTree = "<group>";
 		};
 		486404FD19ADDE99000A08EC /* DKCircleButton */ = {
@@ -393,6 +414,7 @@
 				216992FC1991159E004FB521 /* PillMainViewController.xib in Resources */,
 				48CD025019AE1EEA00B9DD1D /* README.md in Resources */,
 				48CD025619AE251A00B9DD1D /* PillMainTableViewCell.xib in Resources */,
+				486351B719AEC81100349DC4 /* theme.plist in Resources */,
 				216992CA19911502004FB521 /* InfoPlist.strings in Resources */,
 				216992F719911587004FB521 /* PillManagerViewController.xib in Resources */,
 				216992EF1991153F004FB521 /* AddPillViewController.xib in Resources */,
@@ -427,6 +449,7 @@
 				48CD025519AE251A00B9DD1D /* PillMainTableViewCell.m in Sources */,
 				21699331199118FE004FB521 /* RESideMenu.m in Sources */,
 				2169934C1991269A004FB521 /* SchemesViewController.m in Sources */,
+				486351BE19AECC4F00349DC4 /* ThemeManager.m in Sources */,
 				4864050019ADDE99000A08EC /* DKCircleButton.m in Sources */,
 				21699332199118FE004FB521 /* RESideMenuCell.m in Sources */,
 				216992FB1991159E004FB521 /* PillMainViewController.m in Sources */,
@@ -437,6 +460,7 @@
 				216992CC19911502004FB521 /* main.m in Sources */,
 				21699300199115F0004FB521 /* PillAdjustViewController.m in Sources */,
 				21699334199118FE004FB521 /* UIWindow+RESideMenuExtensions.m in Sources */,
+				486351BB19AECB6A00349DC4 /* ThemeColor.m in Sources */,
 				2169934D1991269A004FB521 /* UIColor+Colours.m in Sources */,
 				216992F219911563004FB521 /* AddPillViewController.m in Sources */,
 			);

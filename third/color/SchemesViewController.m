@@ -8,6 +8,7 @@
 
 #import "SchemesViewController.h"
 #import "UIColor+Colours.h"
+#import "ThemeManager.h"
 
 @interface SchemesViewController ()
 
@@ -33,13 +34,21 @@
     monViewsArray = @[monColor1, monColor2, monColor3, monColor4, monColor5];
     triViewsArray = @[triColor1, triColor2, triColor3, triColor4, triColor5];
     comViewsArray = @[comColor1, comColor2, comColor3, comColor4, comColor5];
+   
+    [[ThemeManager instance] loadData];
     
-    [redStepper setValue:(int)(redSlider.value*255.0f)];
-    [greenStepper setValue:(int)(greenSlider.value*255.0f)];
-    [blueStepper setValue:(int)(blueSlider.value*255.0f)];
+    
+    [redStepper setValue:(int)([[ThemeManager instance].color.red floatValue]*255.0f)];
+    [greenStepper setValue:(int)([[ThemeManager instance].color.green floatValue]*255.0f)];
+    [blueStepper setValue:(int)([[ThemeManager instance].color.blue floatValue]*255.0f)];
+    
+    [redSlider setValue:[[ThemeManager instance].color.red floatValue]];
+    [greenSlider setValue:[[ThemeManager instance].color.green floatValue]];
+    [blueSlider setValue:[[ThemeManager instance].color.blue floatValue]];
     
     [self updateLabels];
     [self updateColourSchemeViews];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -64,6 +73,10 @@
 -(void)updateColourSchemeViews{
     // Sets all colour scheme UIView objects to color based on sliders
     UIColor *color = [self colorFromSliders];
+    
+    [ThemeManager instance].color = [[ThemeColor alloc] initWithRed:redSlider.value green:greenSlider.value blue:blueSlider.value];
+    [[ThemeManager instance] saveData];
+    
     
     [self setColourSchemeViews:anViewsArray toSchemeType:ColorSchemeAnalagous usingColor:color];
     [self setColourSchemeViews:monViewsArray toSchemeType:ColorSchemeMonochromatic usingColor:color];
