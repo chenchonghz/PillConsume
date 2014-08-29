@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PillMainViewController.h"
+#import "UIColor+GraphKit.h"
 
 @implementation AppDelegate
 
@@ -24,6 +25,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor gk_greenSeaColor]];
+    [[UINavigationBar appearance] setTintColor:[UIColor gk_pumpkinColor]];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor gk_cloudsColor]}];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[PillMainViewController alloc] init]];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

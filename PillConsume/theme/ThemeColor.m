@@ -19,9 +19,9 @@
 -(id) initWithRed:(float)re green:(float)gr blue:(float)bl {
     self = [super init];
     if (self) {
-        self.red =   [NSNumber numberWithFloat: re];
-        self.green = [NSNumber numberWithFloat: gr];
-        self.blue =  [NSNumber numberWithFloat: bl];
+        self.red =    @(re);
+        self.green =  @(gr);
+        self.blue =   @(bl);
     }
     
     return self;

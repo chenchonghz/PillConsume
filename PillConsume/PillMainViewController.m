@@ -10,6 +10,8 @@
 #import "Pill.h"
 #import "PillDataManager.h"
 #import "PillMainTableViewCell.h"
+#import "PPSoundMgr.h"
+#import "UIColor+GraphKit.h"
 
 @interface PillMainViewController ()
 
@@ -17,8 +19,7 @@
 
 @implementation PillMainViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -26,13 +27,17 @@
     return self;
 }
 
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
     self.title = @"吃药";
     self.view.backgroundColor = [UIColor colorWithRed:0.29 green:0.59 blue:0.81 alpha:1];
     [[PillDataManager instance] loadData];
+   
+    self.graphView = [[GKBarGraph alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
+    self.graphView.dataSource = self;
+    [self.view addSubview:self.graphView];
+    
+    [self.graphView draw];
     
      self.eatPillBtn = [[DKCircleButton alloc] initWithFrame:CGRectMake(115, 436 - 64, 90, 90)];
      self.eatPillBtn.titleLabel.font = [UIFont systemFontOfSize:22];
@@ -55,53 +60,58 @@
     [[PillDataManager instance] loadData];
 }
 
-#pragma mark UITableViewDelegate
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 40.0f;
-}
-
-#pragma mark UITableViewDataSource,
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return [[PillDataManager instance].pillList count];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    Pill *pill =  (Pill*)[[PillDataManager instance].pillList objectAtIndex:indexPath.row];
-   
-    PillMainTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"definestatuscell"];
-    if (cell == nil) {
-        cell = [[[NSBundle mainBundle]loadNibNamed:@"PillMainTableViewCell" owner:self options:nil] lastObject];
-        [cell setRestorationIdentifier:@"definestatuscell"];
-    }
-    
-    [cell setSelectionStyle: UITableViewCellSelectionStyleNone];
-    [cell.nameLabel setText: pill.name];
-    [cell.countLabel setText:[NSString stringWithFormat:@"剩余%d",pill.totolCount]];
-    
-    return  cell;
-    
-}
-
 - (void)tapOnButton {
-    for (int i = [[PillDataManager instance].pillList count] - 1; i >= 0 ; i--) {
+    
+//    [[PPSoundMgr shareInstance] playVibrate];
+    for (long i = [[PillDataManager instance].pillList count] - 1; i >= 0 ; i--) {
         Pill *pi = [[PillDataManager instance].pillList objectAtIndex: i];
-        NSLog(@"i:%d....totolCount:%d",i,pi.totolCount);
         pi.totolCount --;
         if (pi.totolCount == 0) {
             [[PillDataManager instance] removePill:pi];
         }
     }
+    [self.graphView draw];
     
-    [self.pillListTableView reloadData];
+    
+}
+#pragma mark - GKBarGraphDataSource
+
+- (NSInteger)numberOfBars{
+    return [[PillDataManager instance].pillList count];
+}
+- (NSNumber *)valueForBarAtIndex:(NSInteger)index{
+    Pill *pill =  (Pill*)[[PillDataManager instance].pillList objectAtIndex:index];
+    return @(pill.totolCount);
 }
 
+- (UIColor *)colorForBarAtIndex:(NSInteger)index {
+    id colors = @[[UIColor gk_turquoiseColor],
+                  [UIColor gk_peterRiverColor],
+                  [UIColor gk_alizarinColor],
+                  [UIColor gk_amethystColor],
+                  [UIColor gk_emerlandColor],
+                  [UIColor gk_sunflowerColor]
+                  ];
+    return [colors objectAtIndex:index%[colors count]];
+}
+
+- (UIColor *)colorForBarBackgroundAtIndex:(NSInteger)index{
+    return [UIColor grayColor];
+}
+
+- (CFTimeInterval)animationDurationForBarAtIndex:(NSInteger)index{
+    return  1.2;
+}
+
+- (NSString *)titleForBarAtIndex:(NSInteger)index{
+    
+    Pill *pill =  (Pill*)[[PillDataManager instance].pillList objectAtIndex:index];
+    return pill.name;
+}
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

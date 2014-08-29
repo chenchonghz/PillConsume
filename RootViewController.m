@@ -25,6 +25,7 @@
 {
     [super viewDidLoad];
 	self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"菜单" style:UIBarButtonItemStyleBordered target:self action:@selector(showMenu)];
+//    self.
 }
 
 #pragma mark -

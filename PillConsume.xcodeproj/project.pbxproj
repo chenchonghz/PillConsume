@@ -46,7 +46,34 @@
 		486351B719AEC81100349DC4 /* theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 486351B619AEC81100349DC4 /* theme.plist */; };
 		486351BB19AECB6A00349DC4 /* ThemeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351BA19AECB6A00349DC4 /* ThemeColor.m */; };
 		486351BE19AECC4F00349DC4 /* ThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351BD19AECC4F00349DC4 /* ThemeManager.m */; };
+		486351C219AF045200349DC4 /* PPSoundMgr.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351C119AF045200349DC4 /* PPSoundMgr.m */; };
+		486351C419AF04B400349DC4 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486351C319AF04B400349DC4 /* AudioToolbox.framework */; };
+		486351C919AF069F00349DC4 /* bi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 486351C819AF069F00349DC4 /* bi.wav */; };
+		486351CB19AF08AB00349DC4 /* be.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 486351CA19AF08AB00349DC4 /* be.mp3 */; };
+		486351FE19AF2C6E00349DC4 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351D019AF2C6E00349DC4 /* BButton.m */; };
+		486351FF19AF2C6E00349DC4 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351D219AF2C6E00349DC4 /* NSString+FontAwesome.m */; };
+		4863520019AF2C6E00349DC4 /* UIColor+BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351D419AF2C6E00349DC4 /* UIColor+BButton.m */; };
+		4863520119AF2C6E00349DC4 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 486351D619AF2C6E00349DC4 /* FontAwesome.ttf */; };
+		4863520219AF2C6E00349DC4 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 486351D719AF2C6E00349DC4 /* LICENSE.txt */; };
+		4863520319AF2C6E00349DC4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 486351D819AF2C6E00349DC4 /* README.md */; };
+		4863520419AF2C6E00349DC4 /* ScrollViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351DD19AF2C6E00349DC4 /* ScrollViewFrameAccessor.m */; };
+		4863520519AF2C6E00349DC4 /* ViewFrameAccessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351DF19AF2C6E00349DC4 /* ViewFrameAccessor.m */; };
+		4863520619AF2C6E00349DC4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 486351E019AF2C6E00349DC4 /* LICENSE */; };
+		4863520719AF2C6E00349DC4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 486351E119AF2C6E00349DC4 /* README.md */; };
+		4863520819AF2C6E00349DC4 /* GKBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351E519AF2C6E00349DC4 /* GKBar.m */; };
+		4863520919AF2C6E00349DC4 /* GKBarGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351E719AF2C6E00349DC4 /* GKBarGraph.m */; };
+		4863520A19AF2C6E00349DC4 /* GKLineGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351EB19AF2C6E00349DC4 /* GKLineGraph.m */; };
+		4863520B19AF2C6E00349DC4 /* UIColor+GraphKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351ED19AF2C6E00349DC4 /* UIColor+GraphKit.m */; };
+		4863520C19AF2C6E00349DC4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 486351EF19AF2C6E00349DC4 /* LICENSE */; };
+		4863520D19AF2C6E00349DC4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 486351F019AF2C6E00349DC4 /* README.md */; };
+		4863520E19AF2C6E00349DC4 /* NSArray+MK_Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351F519AF2C6E00349DC4 /* NSArray+MK_Block.m */; };
+		4863520F19AF2C6E00349DC4 /* NSArray+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351F719AF2C6E00349DC4 /* NSArray+MK_Misc.m */; };
+		4863521019AF2C6E00349DC4 /* NSMutableArray+MK_Misc.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351F919AF2C6E00349DC4 /* NSMutableArray+MK_Misc.m */; };
+		4863521119AF2C6E00349DC4 /* NSMutableArray+MK_Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351FB19AF2C6E00349DC4 /* NSMutableArray+MK_Queue.m */; };
+		4863521219AF2C6E00349DC4 /* NSMutableArray+MK_Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 486351FD19AF2C6E00349DC4 /* NSMutableArray+MK_Stack.m */; };
 		4864050019ADDE99000A08EC /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 486404FF19ADDE99000A08EC /* DKCircleButton.m */; };
+		4876C3BA19B021C700F43D5F /* NumberJumpTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876C3B719B021C700F43D5F /* NumberJumpTextLayer.m */; };
+		4876C3BB19B021C700F43D5F /* NJDBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876C3B919B021C700F43D5F /* NJDBezierCurve.m */; };
 		48CD025019AE1EEA00B9DD1D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 48CD024F19AE1EEA00B9DD1D /* README.md */; };
 		48CD025519AE251A00B9DD1D /* PillMainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CD025319AE251A00B9DD1D /* PillMainTableViewCell.m */; };
 		48CD025619AE251A00B9DD1D /* PillMainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48CD025419AE251A00B9DD1D /* PillMainTableViewCell.xib */; };
@@ -125,8 +152,55 @@
 		486351BA19AECB6A00349DC4 /* ThemeColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeColor.m; sourceTree = "<group>"; };
 		486351BC19AECC4F00349DC4 /* ThemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeManager.h; sourceTree = "<group>"; };
 		486351BD19AECC4F00349DC4 /* ThemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeManager.m; sourceTree = "<group>"; };
+		486351C019AF045200349DC4 /* PPSoundMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSoundMgr.h; sourceTree = "<group>"; };
+		486351C119AF045200349DC4 /* PPSoundMgr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSoundMgr.m; sourceTree = "<group>"; };
+		486351C319AF04B400349DC4 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		486351C819AF069F00349DC4 /* bi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bi.wav; sourceTree = "<group>"; };
+		486351CA19AF08AB00349DC4 /* be.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = be.mp3; sourceTree = "<group>"; };
+		486351CF19AF2C6E00349DC4 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
+		486351D019AF2C6E00349DC4 /* BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BButton.m; sourceTree = "<group>"; };
+		486351D119AF2C6E00349DC4 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		486351D219AF2C6E00349DC4 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		486351D319AF2C6E00349DC4 /* UIColor+BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BButton.h"; sourceTree = "<group>"; };
+		486351D419AF2C6E00349DC4 /* UIColor+BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BButton.m"; sourceTree = "<group>"; };
+		486351D619AF2C6E00349DC4 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		486351D719AF2C6E00349DC4 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		486351D819AF2C6E00349DC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		486351DB19AF2C6E00349DC4 /* FrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameAccessor.h; sourceTree = "<group>"; };
+		486351DC19AF2C6E00349DC4 /* ScrollViewFrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewFrameAccessor.h; sourceTree = "<group>"; };
+		486351DD19AF2C6E00349DC4 /* ScrollViewFrameAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewFrameAccessor.m; sourceTree = "<group>"; };
+		486351DE19AF2C6E00349DC4 /* ViewFrameAccessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewFrameAccessor.h; sourceTree = "<group>"; };
+		486351DF19AF2C6E00349DC4 /* ViewFrameAccessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewFrameAccessor.m; sourceTree = "<group>"; };
+		486351E019AF2C6E00349DC4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		486351E119AF2C6E00349DC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		486351E419AF2C6E00349DC4 /* GKBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBar.h; sourceTree = "<group>"; };
+		486351E519AF2C6E00349DC4 /* GKBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBar.m; sourceTree = "<group>"; };
+		486351E619AF2C6E00349DC4 /* GKBarGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBarGraph.h; sourceTree = "<group>"; };
+		486351E719AF2C6E00349DC4 /* GKBarGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBarGraph.m; sourceTree = "<group>"; };
+		486351E819AF2C6E00349DC4 /* GraphKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphKit.h; sourceTree = "<group>"; };
+		486351EA19AF2C6E00349DC4 /* GKLineGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKLineGraph.h; sourceTree = "<group>"; };
+		486351EB19AF2C6E00349DC4 /* GKLineGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKLineGraph.m; sourceTree = "<group>"; };
+		486351EC19AF2C6E00349DC4 /* UIColor+GraphKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GraphKit.h"; sourceTree = "<group>"; };
+		486351ED19AF2C6E00349DC4 /* UIColor+GraphKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GraphKit.m"; sourceTree = "<group>"; };
+		486351EF19AF2C6E00349DC4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		486351F019AF2C6E00349DC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		486351F319AF2C6E00349DC4 /* NSArray+MK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MK.h"; sourceTree = "<group>"; };
+		486351F419AF2C6E00349DC4 /* NSArray+MK_Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MK_Block.h"; sourceTree = "<group>"; };
+		486351F519AF2C6E00349DC4 /* NSArray+MK_Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MK_Block.m"; sourceTree = "<group>"; };
+		486351F619AF2C6E00349DC4 /* NSArray+MK_Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MK_Misc.h"; sourceTree = "<group>"; };
+		486351F719AF2C6E00349DC4 /* NSArray+MK_Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MK_Misc.m"; sourceTree = "<group>"; };
+		486351F819AF2C6E00349DC4 /* NSMutableArray+MK_Misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MK_Misc.h"; sourceTree = "<group>"; };
+		486351F919AF2C6E00349DC4 /* NSMutableArray+MK_Misc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MK_Misc.m"; sourceTree = "<group>"; };
+		486351FA19AF2C6E00349DC4 /* NSMutableArray+MK_Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MK_Queue.h"; sourceTree = "<group>"; };
+		486351FB19AF2C6E00349DC4 /* NSMutableArray+MK_Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MK_Queue.m"; sourceTree = "<group>"; };
+		486351FC19AF2C6E00349DC4 /* NSMutableArray+MK_Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MK_Stack.h"; sourceTree = "<group>"; };
+		486351FD19AF2C6E00349DC4 /* NSMutableArray+MK_Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MK_Stack.m"; sourceTree = "<group>"; };
 		486404FE19ADDE99000A08EC /* DKCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCircleButton.h; sourceTree = "<group>"; };
 		486404FF19ADDE99000A08EC /* DKCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCircleButton.m; sourceTree = "<group>"; };
+		4876C3B619B021C700F43D5F /* NumberJumpTextLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberJumpTextLayer.h; sourceTree = "<group>"; };
+		4876C3B719B021C700F43D5F /* NumberJumpTextLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberJumpTextLayer.m; sourceTree = "<group>"; };
+		4876C3B819B021C700F43D5F /* NJDBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJDBezierCurve.h; sourceTree = "<group>"; };
+		4876C3B919B021C700F43D5F /* NJDBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJDBezierCurve.m; sourceTree = "<group>"; };
 		48CD024F19AE1EEA00B9DD1D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		48CD025219AE251A00B9DD1D /* PillMainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PillMainTableViewCell.h; sourceTree = "<group>"; };
 		48CD025319AE251A00B9DD1D /* PillMainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PillMainTableViewCell.m; sourceTree = "<group>"; };
@@ -138,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486351C419AF04B400349DC4 /* AudioToolbox.framework in Frameworks */,
 				216992C219911502004FB521 /* CoreGraphics.framework in Frameworks */,
 				216992C419911502004FB521 /* UIKit.framework in Frameworks */,
 				216992C019911502004FB521 /* Foundation.framework in Frameworks */,
@@ -160,6 +235,7 @@
 		216992B319911501004FB521 = {
 			isa = PBXGroup;
 			children = (
+				2169931E199118FE004FB521 /* third */,
 				216992C519911502004FB521 /* PillConsume */,
 				48CD024F19AE1EEA00B9DD1D /* README.md */,
 				216992DE19911502004FB521 /* PillConsumeTests */,
@@ -180,6 +256,7 @@
 		216992BE19911502004FB521 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				486351C319AF04B400349DC4 /* AudioToolbox.framework */,
 				216992BF19911502004FB521 /* Foundation.framework */,
 				216992C119911502004FB521 /* CoreGraphics.framework */,
 				216992C319911502004FB521 /* UIKit.framework */,
@@ -191,6 +268,9 @@
 		216992C519911502004FB521 /* PillConsume */ = {
 			isa = PBXGroup;
 			children = (
+				486351C719AF069F00349DC4 /* sound */,
+				486351C019AF045200349DC4 /* PPSoundMgr.h */,
+				486351C119AF045200349DC4 /* PPSoundMgr.m */,
 				486351B819AECB4600349DC4 /* theme */,
 				48CD025119AE24E400B9DD1D /* cell */,
 				2169933E19911EF7004FB521 /*  model */,
@@ -211,7 +291,6 @@
 				216993041991161B004FB521 /* SettingViewController.xib */,
 				216992CE19911502004FB521 /* AppDelegate.h */,
 				216992CF19911502004FB521 /* AppDelegate.m */,
-				2169931E199118FE004FB521 /* third */,
 				216992D119911502004FB521 /* Images.xcassets */,
 				2169933719911921004FB521 /* RootViewController.h */,
 				2169933819911921004FB521 /* RootViewController.m */,
@@ -254,6 +333,11 @@
 		2169931E199118FE004FB521 /* third */ = {
 			isa = PBXGroup;
 			children = (
+				4876C3B519B021C700F43D5F /* NJDNumberJump */,
+				486351CC19AF2C6E00349DC4 /* BButton */,
+				486351D919AF2C6E00349DC4 /* FrameAccessor */,
+				486351E219AF2C6E00349DC4 /* GraphKit */,
+				486351EE19AF2C6E00349DC4 /* MKFoundationKit */,
 				486404FD19ADDE99000A08EC /* DKCircleButton */,
 				216993441991269A004FB521 /* color */,
 				2169931F199118FE004FB521 /* RESideMenu */,
@@ -316,6 +400,145 @@
 			path = theme;
 			sourceTree = "<group>";
 		};
+		486351C719AF069F00349DC4 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				486351CA19AF08AB00349DC4 /* be.mp3 */,
+				486351C819AF069F00349DC4 /* bi.wav */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		486351CC19AF2C6E00349DC4 /* BButton */ = {
+			isa = PBXGroup;
+			children = (
+				486351CD19AF2C6E00349DC4 /* BButton */,
+				486351D719AF2C6E00349DC4 /* LICENSE.txt */,
+				486351D819AF2C6E00349DC4 /* README.md */,
+			);
+			path = BButton;
+			sourceTree = "<group>";
+		};
+		486351CD19AF2C6E00349DC4 /* BButton */ = {
+			isa = PBXGroup;
+			children = (
+				486351CE19AF2C6E00349DC4 /* Classes */,
+				486351D519AF2C6E00349DC4 /* resources */,
+			);
+			path = BButton;
+			sourceTree = "<group>";
+		};
+		486351CE19AF2C6E00349DC4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				486351CF19AF2C6E00349DC4 /* BButton.h */,
+				486351D019AF2C6E00349DC4 /* BButton.m */,
+				486351D119AF2C6E00349DC4 /* NSString+FontAwesome.h */,
+				486351D219AF2C6E00349DC4 /* NSString+FontAwesome.m */,
+				486351D319AF2C6E00349DC4 /* UIColor+BButton.h */,
+				486351D419AF2C6E00349DC4 /* UIColor+BButton.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		486351D519AF2C6E00349DC4 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				486351D619AF2C6E00349DC4 /* FontAwesome.ttf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		486351D919AF2C6E00349DC4 /* FrameAccessor */ = {
+			isa = PBXGroup;
+			children = (
+				486351DA19AF2C6E00349DC4 /* FrameAccessor */,
+				486351E019AF2C6E00349DC4 /* LICENSE */,
+				486351E119AF2C6E00349DC4 /* README.md */,
+			);
+			path = FrameAccessor;
+			sourceTree = "<group>";
+		};
+		486351DA19AF2C6E00349DC4 /* FrameAccessor */ = {
+			isa = PBXGroup;
+			children = (
+				486351DB19AF2C6E00349DC4 /* FrameAccessor.h */,
+				486351DC19AF2C6E00349DC4 /* ScrollViewFrameAccessor.h */,
+				486351DD19AF2C6E00349DC4 /* ScrollViewFrameAccessor.m */,
+				486351DE19AF2C6E00349DC4 /* ViewFrameAccessor.h */,
+				486351DF19AF2C6E00349DC4 /* ViewFrameAccessor.m */,
+			);
+			path = FrameAccessor;
+			sourceTree = "<group>";
+		};
+		486351E219AF2C6E00349DC4 /* GraphKit */ = {
+			isa = PBXGroup;
+			children = (
+				486351E319AF2C6E00349DC4 /* BarGraph */,
+				486351E819AF2C6E00349DC4 /* GraphKit.h */,
+				486351E919AF2C6E00349DC4 /* LineGraph */,
+				486351EC19AF2C6E00349DC4 /* UIColor+GraphKit.h */,
+				486351ED19AF2C6E00349DC4 /* UIColor+GraphKit.m */,
+			);
+			path = GraphKit;
+			sourceTree = "<group>";
+		};
+		486351E319AF2C6E00349DC4 /* BarGraph */ = {
+			isa = PBXGroup;
+			children = (
+				486351E419AF2C6E00349DC4 /* GKBar.h */,
+				486351E519AF2C6E00349DC4 /* GKBar.m */,
+				486351E619AF2C6E00349DC4 /* GKBarGraph.h */,
+				486351E719AF2C6E00349DC4 /* GKBarGraph.m */,
+			);
+			path = BarGraph;
+			sourceTree = "<group>";
+		};
+		486351E919AF2C6E00349DC4 /* LineGraph */ = {
+			isa = PBXGroup;
+			children = (
+				486351EA19AF2C6E00349DC4 /* GKLineGraph.h */,
+				486351EB19AF2C6E00349DC4 /* GKLineGraph.m */,
+			);
+			path = LineGraph;
+			sourceTree = "<group>";
+		};
+		486351EE19AF2C6E00349DC4 /* MKFoundationKit */ = {
+			isa = PBXGroup;
+			children = (
+				486351EF19AF2C6E00349DC4 /* LICENSE */,
+				486351F019AF2C6E00349DC4 /* README.md */,
+				486351F119AF2C6E00349DC4 /* Source */,
+			);
+			path = MKFoundationKit;
+			sourceTree = "<group>";
+		};
+		486351F119AF2C6E00349DC4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				486351F219AF2C6E00349DC4 /* NSArray */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		486351F219AF2C6E00349DC4 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				486351F319AF2C6E00349DC4 /* NSArray+MK.h */,
+				486351F419AF2C6E00349DC4 /* NSArray+MK_Block.h */,
+				486351F519AF2C6E00349DC4 /* NSArray+MK_Block.m */,
+				486351F619AF2C6E00349DC4 /* NSArray+MK_Misc.h */,
+				486351F719AF2C6E00349DC4 /* NSArray+MK_Misc.m */,
+				486351F819AF2C6E00349DC4 /* NSMutableArray+MK_Misc.h */,
+				486351F919AF2C6E00349DC4 /* NSMutableArray+MK_Misc.m */,
+				486351FA19AF2C6E00349DC4 /* NSMutableArray+MK_Queue.h */,
+				486351FB19AF2C6E00349DC4 /* NSMutableArray+MK_Queue.m */,
+				486351FC19AF2C6E00349DC4 /* NSMutableArray+MK_Stack.h */,
+				486351FD19AF2C6E00349DC4 /* NSMutableArray+MK_Stack.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
 		486404FD19ADDE99000A08EC /* DKCircleButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -323,6 +546,17 @@
 				486404FF19ADDE99000A08EC /* DKCircleButton.m */,
 			);
 			path = DKCircleButton;
+			sourceTree = "<group>";
+		};
+		4876C3B519B021C700F43D5F /* NJDNumberJump */ = {
+			isa = PBXGroup;
+			children = (
+				4876C3B619B021C700F43D5F /* NumberJumpTextLayer.h */,
+				4876C3B719B021C700F43D5F /* NumberJumpTextLayer.m */,
+				4876C3B819B021C700F43D5F /* NJDBezierCurve.h */,
+				4876C3B919B021C700F43D5F /* NJDBezierCurve.m */,
+			);
+			path = NJDNumberJump;
 			sourceTree = "<group>";
 		};
 		48CD025119AE24E400B9DD1D /* cell */ = {
@@ -410,15 +644,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486351C919AF069F00349DC4 /* bi.wav in Resources */,
 				216993061991161B004FB521 /* SettingViewController.xib in Resources */,
 				216992FC1991159E004FB521 /* PillMainViewController.xib in Resources */,
+				4863520D19AF2C6E00349DC4 /* README.md in Resources */,
 				48CD025019AE1EEA00B9DD1D /* README.md in Resources */,
 				48CD025619AE251A00B9DD1D /* PillMainTableViewCell.xib in Resources */,
 				486351B719AEC81100349DC4 /* theme.plist in Resources */,
+				4863520619AF2C6E00349DC4 /* LICENSE in Resources */,
 				216992CA19911502004FB521 /* InfoPlist.strings in Resources */,
+				486351CB19AF08AB00349DC4 /* be.mp3 in Resources */,
 				216992F719911587004FB521 /* PillManagerViewController.xib in Resources */,
 				216992EF1991153F004FB521 /* AddPillViewController.xib in Resources */,
 				2169934319912048004FB521 /* pilllist.plist in Resources */,
+				4863520319AF2C6E00349DC4 /* README.md in Resources */,
+				4863520719AF2C6E00349DC4 /* README.md in Resources */,
+				4863520C19AF2C6E00349DC4 /* LICENSE in Resources */,
+				4863520119AF2C6E00349DC4 /* FontAwesome.ttf in Resources */,
+				4863520219AF2C6E00349DC4 /* LICENSE.txt in Resources */,
 				2169935119912752004FB521 /* SchemesViewController.xib in Resources */,
 				21699301199115F0004FB521 /* PillAdjustViewController.xib in Resources */,
 				216992D219911502004FB521 /* Images.xcassets in Resources */,
@@ -440,12 +683,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4876C3BA19B021C700F43D5F /* NumberJumpTextLayer.m in Sources */,
 				216992D019911502004FB521 /* AppDelegate.m in Sources */,
 				21699330199118FE004FB521 /* REBackgroundView.m in Sources */,
 				2169933C19911921004FB521 /* RootViewController.m in Sources */,
+				4863521019AF2C6E00349DC4 /* NSMutableArray+MK_Misc.m in Sources */,
+				4876C3BB19B021C700F43D5F /* NJDBezierCurve.m in Sources */,
+				4863520519AF2C6E00349DC4 /* ViewFrameAccessor.m in Sources */,
 				2169932F199118FE004FB521 /* Evaluate.m in Sources */,
 				4857186D19AD81AD00D14C19 /* PillDataManager.m in Sources */,
+				4863520E19AF2C6E00349DC4 /* NSArray+MK_Block.m in Sources */,
+				486351FE19AF2C6E00349DC4 /* BButton.m in Sources */,
+				4863520919AF2C6E00349DC4 /* GKBarGraph.m in Sources */,
+				486351FF19AF2C6E00349DC4 /* NSString+FontAwesome.m in Sources */,
 				21699333199118FE004FB521 /* RESideMenuItem.m in Sources */,
+				4863520F19AF2C6E00349DC4 /* NSArray+MK_Misc.m in Sources */,
 				48CD025519AE251A00B9DD1D /* PillMainTableViewCell.m in Sources */,
 				21699331199118FE004FB521 /* RESideMenu.m in Sources */,
 				2169934C1991269A004FB521 /* SchemesViewController.m in Sources */,
@@ -454,13 +706,21 @@
 				21699332199118FE004FB521 /* RESideMenuCell.m in Sources */,
 				216992FB1991159E004FB521 /* PillMainViewController.m in Sources */,
 				2169934119911F1A004FB521 /* Pill.m in Sources */,
+				4863520B19AF2C6E00349DC4 /* UIColor+GraphKit.m in Sources */,
 				216992F619911587004FB521 /* PillManagerViewController.m in Sources */,
 				216993051991161B004FB521 /* SettingViewController.m in Sources */,
+				4863520A19AF2C6E00349DC4 /* GKLineGraph.m in Sources */,
+				4863520019AF2C6E00349DC4 /* UIColor+BButton.m in Sources */,
+				4863521219AF2C6E00349DC4 /* NSMutableArray+MK_Stack.m in Sources */,
+				486351C219AF045200349DC4 /* PPSoundMgr.m in Sources */,
+				4863521119AF2C6E00349DC4 /* NSMutableArray+MK_Queue.m in Sources */,
+				4863520419AF2C6E00349DC4 /* ScrollViewFrameAccessor.m in Sources */,
 				2169932E199118FE004FB521 /* AccelerationAnimation.m in Sources */,
 				216992CC19911502004FB521 /* main.m in Sources */,
 				21699300199115F0004FB521 /* PillAdjustViewController.m in Sources */,
 				21699334199118FE004FB521 /* UIWindow+RESideMenuExtensions.m in Sources */,
 				486351BB19AECB6A00349DC4 /* ThemeColor.m in Sources */,
+				4863520819AF2C6E00349DC4 /* GKBar.m in Sources */,
 				2169934D1991269A004FB521 /* UIColor+Colours.m in Sources */,
 				216992F219911563004FB521 /* AddPillViewController.m in Sources */,
 			);

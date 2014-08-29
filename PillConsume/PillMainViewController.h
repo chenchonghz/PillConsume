@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "RootViewController.h"
 #import "DKCircleButton.h"
+#import "GKBarGraph.h"
 
-@interface PillMainViewController : RootViewController <UITableViewDataSource,UITableViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UITableView *pillListTableView;
+@interface PillMainViewController : RootViewController <GKBarGraphDataSource>
+
+@property (strong, nonatomic) GKBarGraph *graphView;
 @property (strong, nonatomic) DKCircleButton *eatPillBtn;
 
 @end
